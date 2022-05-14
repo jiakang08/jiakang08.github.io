@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0 auto;
+			padding: 0;
+		}
+		#logo{
+			width: 1030px;
+			line-height: 20px;
+			background: rgb(205,25,55)
+		}
+		#header-center{
+			width: 80PX;
+			height: 50px;
+			background-color: white;
+			text-align: center;
+			line-height: 30px;
+			color: red;
+			position:absolute;
+			top:10px;
+			left:520px;
+			border-radius: 10px;
+		}
+		#header-right{
+			position: absolute;
+			top: 15px;
+			right: 260px;
+		}
+		.right ul{
+			list-style: none;
+		}
+		 .right li{
+			display: inline-block;
+		}
+		#header-right>ul>li>a{
+			color: white;
+			text-decoration: none;
+		}
+		#body-left{
+			width: 190px;
+			line-height: 29px;
+			position: absolute;
+			top: 55px;
+			left: 245px;
+			background: url(img/gameBg1.jpg);
+			border: 2px solid rgb(235,235,235);
+		}
+		.body-left{
+			list-style: none;
+		}
+		.body-left a{
+			color: black;
+			text-decoration: none;
+		}
+		#boby-center{
+			position: absolute;
+			top: 55px;
+			left: 442px;
+			border: 2px solid rgb(235,235,235);
+		}
+		#boby-right{
+			width: 300px;
+			height: 225px;
+			line-height: 35px;
+			background: rgb(243,243,243);
+			position:absolute;
+			top: 60px;
+			right: 246px;
+			border: 2px solid rgb(235,235,235);
+		}
+		#boby-right>dl>dd:nth-of-type(3){
+			display: inline-block;
+			position: absolute;
+			top: 130px;
+			right: 210px;
+			
+		}
+		#boby-right>dl>dd:nth-of-type(4){
+			display: inline-block;
+			position: absolute;
+			right: 110px;
+		}
+		#boby-right>dl>dd>a:link{
+			text-decoration: none;
+			}
+		#bottom{
+			width: 713px;
+			border: 3px solid rgb(235,235,235);
+			position: absolute;
+			top: 293px;
+			left: 245px;
+		}
+		#bottom-left{
+			width: 716px;
+			background: rgb(242,246,249);
+			border-bottom: 3px solid rgb(235,235,235);
+		}
+		#bottom-left>ul>li:nth-of-type(1){
+			color: rgb(116,8,4);
+			padding-right:20px ;
+		}
+		#bottom-left>ul{
+			list-style: none;
+		}
+		#bottom-left>ul>li{
+			display: inline-block;
+		}
+		#bottom-left>ul>li>a{
+			color: rgb(102,102,104);
+		}
+		#bottom-center{
+			margin: 20px;
+			width: 320px;
+			border: 3px solid rgb(235,235,235);
+		}
+		#bottom-center>dl{
+			position: absolute;
+			top: 40px;
+			left: 210px;
+			font-size: 15px;
+		}
+		#bottom-center>dl>dt{
+			font-size: 17px;
+			color: rgb(174,0,0);
+		}
+		span{
+			color: rgb(174,0,0);
+			font-size: 15px;
+		}
+		#bottom-right{
+			width: 330px;
+			margin: 20px;
+			border: 3px solid rgb(235,235,235);
+			position: absolute;
+			top: 24px;
+			left: 340px;
+		}
+		#bottom-right>dl{
+			position: absolute;
+			top: 0px;
+			left: 186px;
+			font-size: 13px;
+		}
+		#xia-left{
+			width: 710px;
+			color: rgb(174,0,0);
+			background: rgb(242,246,249);
+			border:3px solid rgb(235,235,235);
+		}
+		#xia-center{
+			padding-left: 30px;
+			font-size: 10PX;
+		}
+		#xia-center1>dl{
+			display: inline-block;
+			float: left;
+			margin: 15px 15px 0px 15px;
+		}
+		#xia-center2>dl{
+			display: inline-block;
+			float: left;
+			margin: 15px;
+		}
+		#xia-center1>dl>dd{
+			text-align: center;
+		}
+		#xia-center2>dl>dd{
+			text-align: center;
+		}
+		#right{
+			width: 300px;
+			position: absolute;
+			top: 293px;
+			left: 970px;
+			border: 3px solid rgb(235,235,235);
+		}
+		#right1{
+			background: rgb(242,246,249);
+			border-bottom: 3px solid rgb(235,235,235);
+		}
+		#right2{
+			margin: 10px;
+		}
+		#right2>ul{
+			list-style: none;
+		}
+		#right2>ul>li{
+			border-bottom: 2px dashed rgb(235,235,235);
+		}
+		#div{
+			width: 300px;
+			position: absolute;
+			top: 625px;
+			left: 970px;
+			border: 3px solid rgb(235,235,235);
+		}
+		#div1{
+			border-bottom: 3px solid rgb(235,235,235);
+		}
+		#div2{
+			margin: 20px;
+		}
+		#div2>dl:nth-of-type(1){
+			border-bottom: 3px dashed rgb(235,235,235);
+		}
+		#div2>dl:nth-of-type(2){
+			margin-top: 8px;
+		}
+		#div2>dl>dd{
+			color: rgb(53,82,169);
+		}
+		.tt{
+			position: absolute;
+			top: 40px;
+			left: 155px;
+		}
+		.kk{
+			position: absolute;
+			top: 140px;
+			left: 150px;
+		}
+		#id1{
+			position: absolute;
+			top: 950px;
+			left: 250px;
+			font-size: 13px;
+		}
+		#id2>ul{
+			list-style: none;
+		}
+		#id2>ul>li{
+			display: inline-block;
+			padding-right: 10px;
+			color: rgb(32,90,198);
+		}
+		#id3{
+			width: 1000px;
+			position: absolute;
+			top: 1px;
+			left: 365px;
+			padding-left: 45px;
+		}
+		#id3>ul>li{
+			display: inline-block;
+			padding-right:10px ;
+			color: rgb(93,93,93);
+		}
+		</style>
+	</head>
+	<body>
+		<div id="logo">
+			<div id="header-left">
+				<img src="img/gameLogo.jpg" >
+			</div>
+			<div id="header-center">
+				首页
+			</div>
+			<div id="header-right" class="right">
+				<ul>
+					<li><a href="#">注册|</a></li>
+					<li><a href="#">登录|</a></li>
+					<li><a href="#">帮助|</a></li>
+					<li><a href="#">更多</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="body-left">
+			<ul class="body-left">
+				<li><img src="img/sub-1.gif" ><a href="#">侠客世界</a></li>
+				<li><img src="img/sub-2.gif" ><a href="#">征战四方</a></li>
+				<li><img src="img/sub-3.gif" ><a href="#">龙将</a></li>
+				<li><img src="img/sub-4.gif" ><a href="#">弹弹堂</a></li>
+				<li><img src="img/sub-5.gif" ><a href="#">凡人修真2</a></li>
+				<li><img src="img/sub-6.gif" ><a href="#">一骑当先</a></li>
+				<li><img src="img/sub-7.gif" ><a href="#">宫廷计</a></li>
+				<li><img src="img/sub-8.gif" ><a href="#">神仙道</a></li>
+			</ul>
+		</div>
+		<div id="boby-center">
+			<img src="img/img-3.jpg" >
+		</div>
+		<div id="boby-right">
+			<dl>
+				<dt>开心网用户登录</dt>
+				<dd>账号:<input type="text" name="zh" value="" /></dd>
+				<dd>密码:<input type="password" name="mima" value="" /></dd>
+				<dd><input type="image" src="img/btnLogin.jpg"/></dd>
+				<dd><a href="#">立即注册</a><br><a href="#">忘记密码</a></dd>
+			</dl>
+		</div>
+		<div id="bottom">
+			<div id="bottom-left">
+				<ul>
+					<li>全部游戏</li>
+					<li><a href="#">战争策略|</a></li>
+					<li ><a href="#">体育经营|</a></li>
+					<li><a href="#"> 社交游戏</a></li>
+				</ul>
+			</div>
+			<div id="bottom-center">
+				<img src="img/img-4.jpg" >
+				<dl>
+					<dt>龙将</dt>
+					<dd>三国题材横版RPG网<br>游，丰富的武将系统</dd>
+					<dd>类型:角色扮演</dd>
+					<dd>游戏人气:<span>470921</span></dd>
+					<dd><img src="img/btn-02.jpg" >
+					<img src="img/btn-03.jpg" ></dd>
+				</dl>
+			</div>
+			<div id="bottom-right">
+					<img src="img/img-5.jpg" >
+				<dl>
+					<dt><span>征战四方</span></dt>
+					<dd>一款不建主城不等CD，不占资源，全程战斗</dd>
+					<dd>类型：战征策略</dd>
+					<dd>游戏人气：8745221</dd>
+					<dd><img src="img/btn-02.jpg" >
+					<img src="img/btn-03.jpg" ></dd>
+				</dl>
+			</div>
+			<div id="xia-left">
+				角色扮演
+			</div>
+			<div id="xia-center">
+				<div id="xia-center1">
+					<dl>
+					<dt><img src="img/img-6.jpg" ></dt>
+					<dd><span>神仙道</span></dd>
+					<dd>游戏人气;1765314</dd>
+					<dd>游戏状态：<span>22区开启</span></dd>
+					<dd>
+						<img src="img/btn-02.jpg" >
+						<img src="img/btn-03.jpg" >
+					</dd>
+					
+				</dl>
+				<dl>
+					<dt><img src="img/img-7.jpg" ></dt>
+					<dd><span>征战四方</span></dd>
+					<dd>游戏人气：1245814</dd>
+					<dd>游戏状态：<span>23区开启</span></dd>
+					<dd>
+						<img src="img/btn-02.jpg" >
+						<img src="img/btn-03.jpg" >
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/img-8.jpg" ></dt>
+					<dd><span>一骑当先</span></dd>
+					<dd>游戏人气：1232158</dd>
+					<dd>游戏状态：<span>25区开启</span></dd>
+					<dd>
+						<img src="img/btn-02.jpg" >
+						<img src="img/btn-03.jpg" >
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/img-9.jpg" ></dt>
+					<dd><span>洪荒神话</span></dd>
+					<dd>游戏人气：123745</dd>
+					<dd>游戏状态：<span>18区开启</span></dd>
+					<dd><img src="img/btn-02.jpg" >
+						<img src="img/btn-03.jpg" ></dd>
+				</dl>
+				</div>
+				<div id="xia-center2">
+					<dl>
+					<dt><img src="img/img-10.jpg" ></dt>
+					<dd><span>龙将</span> </dd>
+					<dd>游戏人气：178501</dd>
+					<dd>游戏状态：<span>火爆开启</span></dd>
+					<dd>
+						<img src="img/btn-02.jpg" >
+						<img src="img/btn-03.jpg" >
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/img-11.jpg" ></dt>
+					<dd><span></span>一球成名</dd>
+					<dd>游戏人气：983014</dd>
+					<dd>游戏状态：<span>2服开启</span></dd>
+					<dd>
+						<img src="img/btn-02.jpg" >
+						<img src="img/btn-03.jpg" >
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/img-12.jpg" ></dt>
+					<dd><span>凡人修真2</span></dd>
+					<dd>游戏人气：745214</dd>
+					<dd>游戏状态：<span>4服开启</span></dd>
+					<dd>
+						<img src="img/btn-02.jpg" >
+						<img src="img/btn-03.jpg" >
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/img-13.jpg" ></dt>
+					<dd><span>傲视开地</span></dd>
+					<dd>游戏人气：654814</dd>
+					<dd>游戏状态：<span>火爆开启</span></dd>
+					<dd>
+						<img src="img/btn-02.jpg" >
+						<img src="img/btn-03.jpg" >
+					</dd>
+				</dl>
+				</div>   
+			</div>
+		</div>
+		<div id="right">
+			<div id="right1">
+				新闻公告
+			</div>
+			<div id="right2">
+				<ul>
+					<li><img src="img/btn-04.gif" >[征战四方] 开心首服·黄巾之乱</li>
+					<li><img src="img/btn-04.gif" >[龙将] 火爆8服·八门金</li>
+					<li><img src="img/btn-04.gif" >[弹弹堂] 41服开启·万人竞技</li>
+					<li><img src="img/btn-04.gif" >[凡人修真2] 03月08日·四海帝王</li>
+					<li><img src="img/btn-04.gif" >[一骑当先] 开心2服上线送黄金</li>
+					<li><img src="img/btn-04.gif" >[宫廷计] 03月06日·西施秘史</li>
+					<li><img src="img/btn-04.gif" >[神仙道] 03月05日·玄净魔影</li>
+					<li><img src="img/btn-04.gif" >[千军破] 48服·登录送史实名将</li>
+					<li><img src="img/btn-04.gif" >[大唐行镖] 全球唯一走镖页游</li>
+					<li><img src="img/btn-04.gif" >[范特西篮球] 疯狂纽约来啦！</li>
+					<li><img src="img/btn-04.gif" >[一球成名] 27服开服·王者之战</li>
+					<li><img src="img/btn-04.gif" >[凡人修真2] 03月08日·四海帝王</li>
+				</ul>
+			</div>
+		</div>
+		<div id="div">
+			<div id="div1">
+				<span>游戏视频</span>
+			</div>
+			<div id="div2">
+				<dl>
+					<dt><img src="img/img-1.jpg" ></dt>
+					<dd class="tt">《航海之王》麻辣炫酷反穿越，英雄时尚大变身！</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/img-2.jpg" ></dt>
+					<dd class="kk">《弹弹堂》吴克群同名激情主题MV，体验修真乐趣</dd>
+				</dl>
+			</div>
+		</div>
+		<div id="id1">
+			<div id="id2">
+				<ul>
+					<li>关于我们</li>
+					<li>手机版</li>
+					<li>开放平台</li>
+					<li>自助广告</li>
+					<li>招聘</li>
+					<li>客服</li>
+					<li>帮助</li>      
+				</ul>
+			</div>
+			<div id="id3">
+				<ul>
+					<li>@2013开心网</li>
+					<li>文网文[2009]157号</li>
+					<li>京ICP证080482号</li>
+					<li>京公网安备110000000003号</li>
+					<li>未成年人家长监护</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
